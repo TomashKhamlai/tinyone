@@ -1,0 +1,9 @@
+//- opinion.pug
+
+mixin opinion(data)
+  .container
+    .offset-col-d-3.col-d-7.opinion-wrapper.centered
+      img.thumb(src="./content/img/face.png")
+      p.author= data.author
+      p.source= data.source
+      p.cite= data.cite

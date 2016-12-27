@@ -1,0 +1,10 @@
+//- pricing-element.pug
+
+mixin pricing-element(data, ind)
+  .col-12.col-t-4.col-d-4.centered
+    .pricing-element(class= 'pricing-item-' + (ind + 1))
+      h3.pricing-header.bolder= data.type
+      p.description= data.description
+      p.price.capitals= data.price
+      p.duration= data.duration
+      input.get-button.centered.capitals(value= data["posible-action"])

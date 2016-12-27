@@ -1,0 +1,24 @@
+{
+  "name": "tinyone",
+  "description": "Test task.",
+  "main": "gulpfile.babel.js",
+  "authors": [
+    "TomashKhamlai"
+  ],
+  "license": "GPL-3.0",
+  "keywords": [
+    "HTML2PSD"
+  ],
+  "homepage": "https://github.com/TomashKhamlai/tinyone",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Font-Awesome-SVG-PNG": "font-awesome-svg-png#^1.1.5"
+  }
+}

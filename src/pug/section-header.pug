@@ -1,0 +1,6 @@
+//- section-header.pug
+
+mixin section-header(data)
+  div(id=data.id, class=data.id + '-class')
+    h2.content-header.centered= data.header
+    p.content-paragraph.centered.col-d-10.offset-col-d-1= data.paragraph

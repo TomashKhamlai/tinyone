@@ -1,0 +1,7 @@
+//- contacts.pug
+
+mixin contacts(data, ind)
+  .col-12.col-t4.col-d-4
+    .contacts.centered(class= 'contact-' + (ind + 1))
+      p.type= data.type
+      p.content= data.content

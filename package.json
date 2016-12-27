@@ -1,0 +1,35 @@
+{
+  "name": "tinyone",
+  "version": "1.0.0",
+  "description": "Test task.",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomashKhamlai/tinyone.git"
+  },
+  "keywords": [
+    "HTML2PSD"
+  ],
+  "author": "TomashKhamlai",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/TomashKhamlai/tinyone/issues"
+  },
+  "homepage": "https://github.com/TomashKhamlai/tinyone#readme",
+  "dependencies": {
+    "bower": "^1.8.0"
+  },
+  "devDependencies": {
+    "babel-preset-latest": "^6.16.0",
+    "browser-sync": "^2.18.5",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-pug": "^3.2.0",
+    "gulp-pug-beautify": "0.0.1",
+    "gulp-sass": "^3.0.0"
+  }
+}

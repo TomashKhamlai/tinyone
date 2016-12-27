@@ -1,0 +1,7 @@
+//- stats.pug
+
+mixin stats(data, ind)
+  .col-d-3.centered
+    .scores(class= 'score-' + (ind + 1))
+      p.score= data.score
+      p.caption= data.caption

@@ -1,0 +1,191 @@
+// grid.scss
+// $gutter: (100% * $gutter / $grid);
+// $gutter-t: (100% * $gutter-t / $grid-t);
+// $gutter-d: (100% * $gutter-d / $grid-d);
+// $col-width: (100% * $col-width / $grid);
+// $col-width-t: (100% * $col-width-t / $grid-t);
+// $col-width-d: (100% * $col-width-d / $grid-d);
+.container {
+    width: 320px;
+    position: relative;
+    @include center-block;
+}
+
+
+
+@include tablet {
+    .container {
+        width: 480px;
+        position: relative;
+        @include center-block;
+    }
+
+}
+
+@include desktop {
+    .container {
+        width: $desktop-width;
+        position: relative;
+        @include center-block;
+    }
+
+}
+
+.col-1 {
+    position: relative;
+    display: inline-block;
+    // float: left;
+    min-height: 1px;
+    margin-left: calc(100% * #{$gutter} / #{$grid});
+    margin-right: calc(100% * #{$gutter} / #{$grid});
+}
+
+.col-t-1 {
+    position: relative;
+    display: inline-block;
+    // float: left;
+    min-height: 1px;
+    margin-left: calc(100% * #{$gutter-t} / #{$grid-t});
+    margin-right: calc(100% * #{$gutter-t} / #{$grid-t});
+}
+
+.col-d-1 {
+    position: relative;
+    display: inline-block;
+    // float: left;
+    min-height: 1px;
+    margin-left: calc(100% * #{$gutter-d} / #{$grid-d});
+    margin-right: calc(100% * #{$gutter-d} / #{$grid-d});
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        @extend .col-1
+    }
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        @extend .col-1
+    }
+}
+
+@for $i from 1 through 12 {
+    .col-t-#{$i} {
+        @extend .col-t-1
+    }
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        @extend .col-1
+    }
+}
+
+@for $i from 1 through 12 {
+    .col-t-#{$i} {
+        @extend .col-t-1
+    }
+}
+
+@for $i from 1 through 12 {
+    .col-d-#{$i} {
+        @extend .col-d-1
+    }
+}
+
+.container {
+    @for $i from 1 to 12 {
+        .offset-col-#{$i} {
+            margin-left: calc(((#{$col-width} * #{$i} + #{$gutter} * ( #{$i} * 2 + 1)) * 100%) / #{$grid});
+        }
+    }
+    @include tablet {
+        @for $i from 1 to 12 {
+            .offset-col-#{$i} {
+                margin-left: calc(((#{$col-width} * #{$i} + #{$gutter} * ( #{$i} * 2 + 1)) * 100%) / #{$grid});
+            }
+        }
+    }
+    @include tablet {
+        @for $i from 1 to 12 {
+            .offset-col-t-#{$i} {
+                margin-left: calc(((#{$col-width-t} * #{$i} + #{$gutter-t} * ( #{$i} * 2 + 1)) * 100%) / #{$grid-t});
+            }
+        }
+    }
+    @include desktop {
+        @for $i from 1 to 12 {
+            .offset-col-#{$i} {
+                margin-left: calc(((#{$col-width} * #{$i} + #{$gutter} * ( #{$i} * 2 + 1)) * 100%) / #{$grid});
+            }
+        }
+    }
+    @include desktop {
+        @for $i from 1 to 12 {
+            .offset-col-t-#{$i} {
+                margin-left: calc(((#{$col-width-t} * #{$i} + #{$gutter-t} * ( #{$i} * 2 + 1)) * 100%) / #{$grid-t});
+            }
+        }
+    }
+    @include desktop {
+        @for $i from 1 to 12 {
+            .offset-col-d-#{$i} {
+                margin-left: calc(((#{$col-width-d} * #{$i} + #{$gutter-d} * ( #{$i} * 2 + 1)) * 100%) / #{$grid-d});
+            }
+        }
+    }
+    @for $i from 1 through 12 {
+        .col-#{$i} {
+            width: calc((#{$col-width} * #{$i} + #{$gutter} * 2 * (#{$i} - 1)) * 100% / #{$grid});
+            // background-color: blue;
+            vertical-align: top;
+        }
+    }
+    @include tablet {
+        @for $i from 1 through 12 {
+            .col-#{$i} {
+                width: calc((#{$col-width} * #{$i} + #{$gutter} * 2 * (#{$i} - 1)) * 100% / #{$grid});
+                // background-color: blue;
+                vertical-align: top;
+            }
+        }
+    }
+    @include tablet {
+        @for $i from 1 through 12 {
+            .col-t-#{$i} {
+                width: calc((#{$col-width-t} * #{$i} + #{$gutter-t} * 2 * (#{$i} - 1)) * 100% / #{$grid-t});
+                // background-color: green;
+                vertical-align: top;
+            }
+        }
+    }
+    @include desktop {
+        @for $i from 1 through 12 {
+            .col-#{$i} {
+                width: calc((#{$col-width} * #{$i} + #{$gutter} * 2 * (#{$i} - 1)) * 100% / #{$grid});
+                // background-color: blue;
+                vertical-align: top;
+            }
+        }
+    }
+    @include desktop {
+        @for $i from 1 through 12 {
+            .col-t-#{$i} {
+                width: calc((#{$col-width-t} * #{$i} + #{$gutter-t} * 2 * (#{$i} - 1)) * 100% / #{$grid-t});
+                // background-color: green;
+                vertical-align: top;
+            }
+        }
+    }
+    @include desktop {
+        @for $i from 1 through 12 {
+            .col-d-#{$i} {
+                // superwidth: (($col-width-d * $i + $gutter-d * 2 * ($i - 1)) * 100% / $grid-d);
+                width: calc((#{$col-width-d} * #{$i} + #{$gutter-d} * 2 * (#{$i} - 1)) * 100% / #{$grid-d});
+                // background-color: violet;
+                vertical-align: top;
+            }
+        }
+    }
+}

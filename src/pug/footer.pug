@@ -1,0 +1,28 @@
+//- footer.pug
+.container
+  - var lastind = locals.pageN.length - 1;
+  - var temp = locals.pageN[lastind]
+  .wrapper-1
+    .col-8.offset-col-2
+      h1.main-header.centered= temp.header1
+    .col-8.offset-col-2
+      .main-paragraph.centered.subhead= temp.paragraph1
+  .wrapper-2
+    .col-3
+      p
+        | HALOVIETNAM LTD 66, Dang Van ngu, Dong Da Hanoi, Vietnam
+    .col-1.offset-col-1
+      p
+        | Examples Shop License
+    .col-1.offset-col-1
+      p
+        | Contact About Privacy Terms
+    .col-1.offset-col-1
+      p
+        | Download Support Documents
+    .col-1.offset-col-1
+      p
+        | Media Blog Forums
+
+
+script(src='./js/script.js')

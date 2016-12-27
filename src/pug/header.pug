@@ -1,0 +1,48 @@
+//- header.pug
+.container
+  .top-nav-wrapper.container
+    .col-2.col-t-3.col-d-4.nav-el-1
+      .topnav#tinyone-nav
+        li.icon
+          a.toggle-nav-link#toggle-nav(href="#")
+        li
+          a(href="#features") Tinyone features
+        li
+          a(href="#pricing") Pricing And Free Tria
+        li
+          a(href="#works") Our works
+        li
+          a(href="#team") Our team
+        li
+          a(href="#stats") Stats &amp; Testimonial
+        li
+          a(href="#feedback") Feedback
+        li
+          a(href="#keep-in-touch") Keep in touch with us
+        li
+          a(href="#sign-up") Sign up for our newsletter
+    .col-2.col-t-3.col-d-4.nav-el-2.centered
+      .logo
+        img.fingerprint(src="./content/img/ffingerprint.svg", width="43", height="43")
+        h1.brand tinyone
+    .col-6.col-t-6.col-d-4.nav-el-3.right-alighned
+      ul.social-links
+        li
+          a.fb(href="#", aria-hidden="true") Facebook
+        li
+          a.tw(href="#", aria-hidden="true") Twitter
+        li
+          a.gp(href="#", aria-hidden="true") Google+
+        li
+          a.pt(href="#", aria-hidden="true") Pinterest
+  - var temp = locals.pageN[0]
+  .welcome-wrapper
+    .welcome
+      .col-12.col-t-8.col-d-8.offset-col-t-2.offset-col-d-2
+        h2.main-header.centered= temp.header1
+      .col-12.col-t-12.col-d-8.offset-col-d-2
+        .main-paragraph.centered.subhead= temp.paragraph1
+      .col-12.col-t-8.col-d-8.offset-col-t-2.offset-col-d-2
+        input.action-welcome-btn.centered.capitals(value=temp.action)
+      .arrow-next.centered
+        a.arrow(href="#features")

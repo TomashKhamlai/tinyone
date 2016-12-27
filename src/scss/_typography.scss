@@ -1,0 +1,133 @@
+        // Typography
+        html {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 75%;
+            color: $body-text-color;
+        }
+
+        @include tablet {
+            html {
+                font-size: 100%;
+            }
+        }
+
+        @include desktop {
+            html {
+                font-size: 125%;
+            }
+        }
+        
+        *[aria-hidden="true"] {
+            text-indent: -9999px;
+            font-size: 0;
+        }
+        
+        .left-aligned {
+            text-align: left;
+        }
+        
+        .centered {
+            text-align: center;
+        }
+        
+        .right-alighned {
+            text-align: right;
+        }
+        
+        .capitals {
+            text-transform: uppercase;
+        }
+        
+        .bolder {
+            font-weight: 700;
+        }
+        
+        .main-header {
+            font-size: 2.4rem;
+            color: $verydark;
+        }
+        .brand {
+            font-size: 1.5rem;
+            color: $verydark;
+            font-weight: 700;
+        }
+        
+        .main-paragraph {
+            font-size: inherit;
+            color: $verydark;
+        }
+        
+        .content-header {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: $black;
+        }
+        
+        .content-paragraph {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            color: #898989;
+        }
+        
+        .subhead {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            color: $verydark;
+        }
+
+        .sub-head-style {
+            font-size: 0.8rem;
+            color: #898989;
+        }
+
+        .descriptive-style {
+            color: #313841;
+            font-size: 0.7rem;
+        }
+
+        .descript {
+           font-size: 0.7rem;
+           color: #898989; 
+        }
+        
+        .feature-header {
+            font-size: 1.1rem;
+            color: $black;
+        }
+        
+        .pricing-header {
+            font-size: 1.2rem;
+            color: $black;
+        }
+        
+        .container {
+            font-size: 0;
+            .container {
+                font-size: 0;
+            }
+        }
+        
+        .container > * {
+            font-size: initial;
+        }
+        
+        // @for $i from 1 through 12 {
+        //     .col-#{$i} {
+        //         * {
+        //             font-size: initial;
+        //         }
+        //     }
+        //     .col-t-#{$i} {
+        //         * {
+        //             font-size: initial;
+        //         }
+        //     }
+        //     .col-d-#{$i} {
+        //         * {
+        //             font-size: initial;
+        //         }
+        //     }
+        // }

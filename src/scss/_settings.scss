@@ -1,0 +1,59 @@
+// settings.scss
+// Global Variables
+// Colors
+// BG colors
+//TG colors
+$black: #010101;
+$verydark: #222222;
+$body-text-color: #898989;
+$grid: 320;
+$grid-t: 480;
+$grid-d: 960;
+$margin: 0;
+$margin-t: 5;
+$margin-d: 10;
+$gutter: 2;
+$gutter-t: 5;
+$gutter-d: 10;
+$col-width: 22;
+$col-width-t: 30;
+$col-width-d: 60;
+$tablet-width: 480px;
+//
+$desktop-width: 960px;
+$img-path: '../content/img/';
+$feature-icons: ( 'icon-1': 'computer-tablet.svg', 'icon-2': 'lemon.svg', 'icon-3': 'folder-white-shape.svg', 'icon-4': 'code.svg', 'icon-5': 'envelope-of-white-paper.svg', 'icon-6': 'bookmark-white.svg');
+$pricing-icons: ('icon-1':'computer-tablet.svg', 'icon-2': 'open-laptop-computer.svg', 'icon-3': 'desktop-monitor.svg');
+$score-icons: ('icon-1': 'puzzle-piece-silhouette.svg', 'icon-2': 'cloud-storage-download.svg', 'icon-3': 'group-profile-users.svg', 'icon-4': 'thumbs-up-hand-symbol.svg');
+$kit-icons: ('icon-1': 'map-marker.svg', 'icon-2': 'envelope.svg', 'icon-3': 'telephone-symbol-button.svg');
+
+// Mixins
+@mixin tablet {
+    // @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @media (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+@mixin center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}

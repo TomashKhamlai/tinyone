@@ -1,0 +1,43 @@
+//- main.pug
+
+include section-header
+include feature-element
+include pricing-element
+include work-item
+include team-member
+include stats
+include opinion
+include contacts
+include feedback-cite
+- for (var x = 1; x < locals.pageN.length-1; x++)
+  .container
+    - var section = locals.pageN[x].section
+    case section
+      when 'features'
+        +section-header(locals.pageN[x])
+        ul.feature-list.container
+          - for (var i = 0; i < locals.pageN[x].features.length; i++)
+            +feature-element(locals.pageN[x].features[i], i)
+      when 'pricing'
+        +section-header(locals.pageN[x])
+        - var len = locals.pageN[x].pricing.length
+        - for (var i = 0; i < len; i++)
+          +pricing-element(locals.pageN[x].pricing[i], i)
+      when 'works'
+        +section-header(locals.pageN[x])
+        - for (var i = 0; i < locals.pageN[x].works.length; i++)
+          +work-item(locals.pageN[x].works[i])
+      when 'team'
+        +section-header(locals.pageN[x])
+        - for (var i = 0; i < locals.pageN[x].team.length; i++)
+          +team-member(locals.pageN[x].team[i], i)
+      when 'stats'
+        +section-header(locals.pageN[x])
+        - for (var i = 0; i < locals.pageN[x].stats.length; i++)
+          +stats(locals.pageN[x].stats[i], i)
+        +opinion(locals.pageN[6])
+      when 'keepintouch'
+        +section-header(locals.pageN[x])
+        - for (var i = 0; i < locals.pageN[x].keepintouch.length; i++)
+          +contacts(locals.pageN[x].keepintouch[i], i)
+include form

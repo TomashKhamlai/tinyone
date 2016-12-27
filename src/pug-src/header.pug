@@ -1,0 +1,62 @@
+//- header.pug
+svg(version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink", style="position: absolute; z-index: -1")
+  defs
+    filter#blur
+      feGaussianBlur(stdDeviation="5")/
+    filter#drop-shadow
+      feGaussianBlur(in="SourceAlpha", stdDeviation="2")/
+      feOffset(dx="5", dy="5", result="offsetblur")/
+      feFlood(flood-color="#000000")/
+      feComposite(in2="offsetblur", operator="in")/
+      feMerge
+        feMergeNode/
+        feMergeNode(in="SourceGraphic")/ 
+.container.full#target-container
+  .top-nav-wrapper.container.full
+    .col-4.col-t-4.col-d-4.nav-el-1
+      .topnav-container
+        ul.topnav#tinyone-nav
+          li.icon
+            a.toggle-nav-link#toggle-nav(href="#")
+          li
+            a(href="#features") Tinyone features
+          li
+            a(href="#pricing") Pricing And Free Tria
+          li
+            a(href="#works") Our works
+          li
+            a(href="#team") Our team
+          li
+            a(href="#stats") Stats &amp; Testimonial
+          li
+            a(href="#feedback") Feedback
+          li
+            a(href="#keep-in-touch") Keep in touch with us
+          li
+            a(href="#sign-up") Sign up for our newsletter
+    .col-4.col-t-4.col-d-4.nav-el-2.centered
+      .logo
+        img.fingerprint(src="./content/img/ffingerprint.svg", width="43", height="43")
+        h1.brand tinyone
+    .col-4.col-t-4.col-d-4.nav-el-3.right-alighned
+      ul.social-links
+        li
+          a.fb(href="#", aria-hidden="true") Facebook
+        li
+          a.tw(href="#", aria-hidden="true") Twitter
+        li
+          a.gp(href="#", aria-hidden="true") Google+
+        li
+          a.pt(href="#", aria-hidden="true") Pinterest
+.container.screen
+  .welcome-wrapper
+    .welcome
+      - var temp = locals.pageN[0]
+      .col-12.col-t-8.col-d-8.offset-col-t-2.offset-col-d-2
+        h2.main-header.centered= temp.header1
+      .col-12.col-t-12.col-d-8.offset-col-d-2
+        .main-paragraph.centered.subhead= temp.paragraph1
+      .col-12.col-t-8.col-d-8.offset-col-t-2.offset-col-d-2
+        input.action-welcome-btn.centered.capitals(value=temp.action)
+      .arrow-next.centered
+        a.arrow(href="#features")

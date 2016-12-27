@@ -1,0 +1,14 @@
+//- team-member.pug
+mixin team-member(data, ind)
+  .team-member.centered.col-12.col-t-6.col-d-3
+    img.thumbnail(src=data.thumb, alt=data["full-name"])
+    h3.full-name= data["full-name"]
+    p.position= data.position
+    p.about= data.about
+    ul.socialconnect
+      li
+        a.facebook(href=data.links[0].facebook, title=data["full-name"] + ' on Facebook')
+      li
+        a.twitter(href=data.links[1].twitter, title=data["full-name"] + ' on Twitter')
+      li
+        a.linkedin(href=data.links[2].linkedin, title=data["full-name"] + ' on Linkedin')

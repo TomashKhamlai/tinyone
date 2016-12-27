@@ -1,0 +1,16 @@
+//- work-item.pug
+
+mixin work-item(data)
+  .work-item.col-d-3
+    .thumb-wrapper
+      img(src=data.thumb, alt=data.header)
+      a.call-to-action(href="#",title="Show")
+      .link-btn
+      .additional-info
+        .nov-container
+          p.number-of-views= data["number-of-views"]
+        .d-container
+          p.date= data.date
+    h3.work-header.centered= data.header
+    p.category-labeled.centered= data.category
+    a(href= data.link, target="_blank" title="Open in New Tab")

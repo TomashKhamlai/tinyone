@@ -1,0 +1,6 @@
+//- feature.pug
+mixin feature-element(data, ind)
+  li.col-12.col-t-6.col-d-4
+    .feature-description(class= 'feature-' + (ind + 1))
+      h3.feature-header.bolder= data.header
+      p.feature-paragraph= data.description

@@ -1,0 +1,189 @@
+{
+    "pageN": [{
+        "section": "welcome",
+        "header1": "Inspire your inspiration",
+        "paragraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.",
+        "action": "Get start"
+    }, {
+        "section": "features",
+        "id": "features",
+        "header": "Tinyone features",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.",
+        "features": [
+            { "header": "Fully Responsive", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum." },
+            { "header": "Fully Layered PSD", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum." },
+            { "header": "Font Awesome Icons", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum." },
+            { "header": "HTML3 & CSS3", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum." },
+            { "header": "Email Template", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum." },
+            { "header": "Free to download", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum." }
+        ]
+    }, {
+        "section": "pricing",
+        "id": "pricing",
+        "header": "Pricing And Free Trial",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.",
+        "pricing": [{
+            "type": "Basic",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "price": "Free",
+            "duration": "free forever",
+            "posible-action": "Get free now "
+        }, {
+            "type": "Standard",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ",
+            "price": "$99",
+            "duration": "month ",
+            "posible-action": "Upgrade"
+        }, {
+            "type": "Enterprise",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "price": "$199",
+            "duration": "month",
+            "posible-action": "Learn more"
+        }]
+
+    }, {
+        "section": "works",
+        "id": "works",
+        "header": "Our works",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.",
+        "works": [{
+            "header": "Fully Responsive",
+            "thumb": "./content/img/work_01.jpg",
+            "category": "Design / Branding",
+            "number-of-views": "279",
+            "date": "07/03/14",
+            "link": "#"
+        }, {
+            "header": "Font Awesome Icons",
+            "thumb": "./content/img/work_02.jpg",
+            "category": "Design / Branding",
+            "number-of-views": "279",
+            "date": "07/03/14",
+            "link": "#"
+        }, {
+            "header": "HTML3 & CSS3",
+            "thumb": "./content/img/work_03.jpg",
+            "category": "App design / development",
+            "number-of-views": "279",
+            "date": "07/03/14",
+            "link": "#"
+        }, {
+            "header": "Various Layouts",
+            "thumb": "./content/img/work_04.jpg",
+            "category": "Branding",
+            "number-of-views": "279",
+            "date": "07/03/14",
+            "link": "#"
+        }, {
+            "header": "Fully Responsive",
+            "thumb": "./content/img/work_05.jpg",
+            "category": "Design / Branding",
+            "number-of-views": "279",
+            "date": "07/03/14",
+            "link": "#"
+        }, {
+            "header": "Font Awesome Icons",
+            "thumb": "./content/img/work_06.jpg",
+            "category": "Design / Branding",
+            "number-of-views": "279",
+            "date": "07/03/14",
+            "link": "#"
+        }, {
+            "header": "HTML3 & CSS3",
+            "thumb": "./content/img/work_07.jpg",
+            "category": "App design / development",
+            "number-of-views": "279",
+            "date": "07/03/14",
+            "link": "#"
+        }, {
+            "header": "Various Layouts",
+            "thumb": "./content/img/work_08.jpg",
+            "category": "Branding",
+            "number-of-views": "279",
+            "date": "07/03/14",
+            "link": "#"
+        }]
+    }, {
+        "section": "team",
+        "id": "team",
+        "header": "Our team",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.",
+        "team": [{
+            "full-name": "Fully Responsive",
+            "thumb": "content/img/team-player-1.png",
+            "position": "Design / Branding",
+            "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "links": [
+                { "facebook": "#" },
+                { "twitter": "#" },
+                { "linkedin": "#" }
+            ]
+        }, {
+            "full-name": "Fully Responsive",
+            "thumb": "content/img/team-player-2.png",
+            "position": "Design / Branding",
+            "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "links": [
+                { "facebook": "#" },
+                { "twitter": "#" },
+                { "linkedin": "#" }
+            ]
+        }, {
+            "full-name": "Fully Responsive",
+            "thumb": "content/img/team-player-3.png",
+            "position": "Design / Branding",
+            "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "links": [
+                { "facebook": "#" },
+                { "twitter": "#" },
+                { "linkedin": "#" }
+            ]
+        }, {
+            "full-name": "Fully Responsive",
+            "thumb": "content/img/team-player-4.png",
+            "position": "Design / Branding",
+            "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "links": [
+                { "facebook": "#" },
+                { "twitter": "#" },
+                { "linkedin": "#" }
+            ]
+        }]
+    }, {
+        "section": "stats",
+        "id": "stats",
+        "header": "Stats & Testimonial",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.",
+        "stats": [{
+            "score": "20",
+            "caption": "Products"
+        }, {
+            "score": "120,000",
+            "caption": "Downloads"
+        }, {
+            "score": "1200",
+            "caption": "Customers"
+        }, {
+            "score": "900",
+            "caption": "Like"
+        }]
+    }, {
+        "section": "opinion",
+        "id": "opinion",
+        "author": "John Doe",
+        "source": "From Wỏdpress",
+        "cite": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis."
+    }, {
+        "section": "keepintouch",
+        "id": "keep-in-touch",
+        "header": "Keep in touch with us",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.",
+        "keepintouch": [{"type": "Address", "content": "66, Dang Van ngu, Dong Da, Ha noi, Vietnam" }, { "type": "E-mail", "content": "contact@halovietnam.com" }, { "type": "Phone", "content": "+844 1234 56789" }]
+    }, {
+        "section": "signup",
+        "header1": "Sign up for our newsletter",
+        "paragraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis."
+
+    }]
+}
