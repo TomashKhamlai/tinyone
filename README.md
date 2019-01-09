@@ -1,2 +1,3 @@
 # tinyone
-Test task.
+To build the progect navigate to `build` folder
+

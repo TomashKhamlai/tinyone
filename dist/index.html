@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tinyone</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header class="header">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; z-index: -1">
+        <defs>
+          <filter id="blur">
+            <feGaussianBlur stdDeviation="5"/>
+          </filter>
+          <filter id="drop-shadow">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+            <feOffset dx="5" dy="5" result="offsetblur"/>
+            <feFlood flood-color="#000000"/>
+            <feComposite in2="offsetblur" operator="in"/>
+            <feMerge>
+              <feMergeNode/>
+              <feMergeNode in="SourceGraphic"/> 
+            </feMerge>
+          </filter>
+        </defs>
+      </svg>
+      <div class="container full" id="target-container">
+        <div class="top-nav-wrapper container full">
+          <div class="col-4 col-t-4 col-d-4 nav-el-1">
+            <div class="topnav-container">
+              <ul class="topnav" id="tinyone-nav">
+                <li class="icon"><a class="toggle-nav-link" id="toggle-nav" href="#"></a></li>
+                <li><a href="#features">Tinyone features</a></li>
+                <li><a href="#pricing">Pricing And Free Tria</a></li>
+                <li><a href="#works">Our works</a></li>
+                <li><a href="#team">Our team</a></li>
+                <li><a href="#stats">Stats &amp; Testimonial</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#keep-in-touch">Keep in touch with us</a></li>
+                <li><a href="#sign-up">Sign up for our newsletter</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-4 col-t-4 col-d-4 nav-el-2 centered">
+            <div class="logo"><img class="fingerprint" src="./content/img/ffingerprint.svg" width="43" height="43">
+              <h1 class="brand">tinyone</h1>
+            </div>
+          </div>
+          <div class="col-4 col-t-4 col-d-4 nav-el-3 right-alighned">
+            <ul class="social-links">
+              <li><a class="fb" href="#" aria-hidden="true">Facebook</a></li>
+              <li><a class="tw" href="#" aria-hidden="true">Twitter</a></li>
+              <li><a class="gp" href="#" aria-hidden="true">Google+</a></li>
+              <li><a class="pt" href="#" aria-hidden="true">Pinterest</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container screen">
+        <div class="welcome-wrapper">
+          <div class="welcome">
+            <div class="col-12 col-t-8 col-d-8 offset-col-t-2 offset-col-d-2">
+              <h2 class="main-header centered">Inspire your inspiration</h2>
+            </div>
+            <div class="col-12 col-t-12 col-d-8 offset-col-d-2">
+              <div class="main-paragraph centered subhead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</div>
+            </div>
+            <div class="col-12 col-t-8 col-d-8 offset-col-t-2 offset-col-d-2">
+              <input class="action-welcome-btn centered capitals" value="Get start">
+            </div>
+            <div class="arrow-next centered"><a class="arrow" href="#features"></a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+              <div class="features-class" id="features">
+                <h2 class="content-header centered">Tinyone features</h2>
+                <p class="content-paragraph centered col-d-10 offset-col-d-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</p>
+              </div>
+        <ul class="feature-list container">
+                <li class="col-12 col-t-6 col-d-4">
+                  <div class="feature-description feature-1">
+                    <h3 class="feature-header bolder">Fully Responsive</h3>
+                    <p class="feature-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+                  </div>
+                </li>
+                <li class="col-12 col-t-6 col-d-4">
+                  <div class="feature-description feature-2">
+                    <h3 class="feature-header bolder">Fully Layered PSD</h3>
+                    <p class="feature-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+                  </div>
+                </li>
+                <li class="col-12 col-t-6 col-d-4">
+                  <div class="feature-description feature-3">
+                    <h3 class="feature-header bolder">Font Awesome Icons</h3>
+                    <p class="feature-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+                  </div>
+                </li>
+                <li class="col-12 col-t-6 col-d-4">
+                  <div class="feature-description feature-4">
+                    <h3 class="feature-header bolder">HTML3 &amp; CSS3</h3>
+                    <p class="feature-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+                  </div>
+                </li>
+                <li class="col-12 col-t-6 col-d-4">
+                  <div class="feature-description feature-5">
+                    <h3 class="feature-header bolder">Email Template</h3>
+                    <p class="feature-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+                  </div>
+                </li>
+                <li class="col-12 col-t-6 col-d-4">
+                  <div class="feature-description feature-6">
+                    <h3 class="feature-header bolder">Free to download</h3>
+                    <p class="feature-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+                  </div>
+                </li>
+        </ul>
+      </div>
+      <div class="container">
+              <div class="pricing-class" id="pricing">
+                <h2 class="content-header centered">Pricing And Free Trial</h2>
+                <p class="content-paragraph centered col-d-10 offset-col-d-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</p>
+              </div>
+              <div class="col-12 col-t-4 col-d-4 centered">
+                <div class="pricing-element pricing-item-1">
+                  <h3 class="pricing-header bolder">Basic</h3>
+                  <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  <p class="price capitals">Free</p>
+                  <p class="duration">free forever</p>
+                  <input class="get-button centered capitals" value="Get free now ">
+                </div>
+              </div>
+              <div class="col-12 col-t-4 col-d-4 centered">
+                <div class="pricing-element pricing-item-2">
+                  <h3 class="pricing-header bolder">Standard</h3>
+                  <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                  <p class="price capitals">$99</p>
+                  <p class="duration">month </p>
+                  <input class="get-button centered capitals" value="Upgrade">
+                </div>
+              </div>
+              <div class="col-12 col-t-4 col-d-4 centered">
+                <div class="pricing-element pricing-item-3">
+                  <h3 class="pricing-header bolder">Enterprise</h3>
+                  <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  <p class="price capitals">$199</p>
+                  <p class="duration">month</p>
+                  <input class="get-button centered capitals" value="Learn more">
+                </div>
+              </div>
+      </div>
+      <div class="container">
+              <div class="works-class" id="works">
+                <h2 class="content-header centered">Our works</h2>
+                <p class="content-paragraph centered col-d-10 offset-col-d-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</p>
+              </div>
+              <div class="work-item col-d-3">
+                <div class="thumb-wrapper"><img src="./content/img/work_01.jpg" alt="Fully Responsive"><a class="call-to-action" href="#" title="Show"></a>
+                  <div class="link-btn"></div>
+                  <div class="additional-info">
+                    <div class="nov-container">
+                      <p class="number-of-views">279</p>
+                    </div>
+                    <div class="d-container">
+                      <p class="date">07/03/14</p>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="work-header centered">Fully Responsive</h3>
+                <p class="category-labeled centered">Design / Branding</p><a href="#" target="_blank" title="Open in New Tab"></a>
+              </div>
+              <div class="work-item col-d-3">
+                <div class="thumb-wrapper"><img src="./content/img/work_02.jpg" alt="Font Awesome Icons"><a class="call-to-action" href="#" title="Show"></a>
+                  <div class="link-btn"></div>
+                  <div class="additional-info">
+                    <div class="nov-container">
+                      <p class="number-of-views">279</p>
+                    </div>
+                    <div class="d-container">
+                      <p class="date">07/03/14</p>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="work-header centered">Font Awesome Icons</h3>
+                <p class="category-labeled centered">Design / Branding</p><a href="#" target="_blank" title="Open in New Tab"></a>
+              </div>
+              <div class="work-item col-d-3">
+                <div class="thumb-wrapper"><img src="./content/img/work_03.jpg" alt="HTML3 &amp; CSS3"><a class="call-to-action" href="#" title="Show"></a>
+                  <div class="link-btn"></div>
+                  <div class="additional-info">
+                    <div class="nov-container">
+                      <p class="number-of-views">279</p>
+                    </div>
+                    <div class="d-container">
+                      <p class="date">07/03/14</p>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="work-header centered">HTML3 &amp; CSS3</h3>
+                <p class="category-labeled centered">App design / development</p><a href="#" target="_blank" title="Open in New Tab"></a>
+              </div>
+              <div class="work-item col-d-3">
+                <div class="thumb-wrapper"><img src="./content/img/work_04.jpg" alt="Various Layouts"><a class="call-to-action" href="#" title="Show"></a>
+                  <div class="link-btn"></div>
+                  <div class="additional-info">
+                    <div class="nov-container">
+                      <p class="number-of-views">279</p>
+                    </div>
+                    <div class="d-container">
+                      <p class="date">07/03/14</p>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="work-header centered">Various Layouts</h3>
+                <p class="category-labeled centered">Branding</p><a href="#" target="_blank" title="Open in New Tab"></a>
+              </div>
+              <div class="work-item col-d-3">
+                <div class="thumb-wrapper"><img src="./content/img/work_05.jpg" alt="Fully Responsive"><a class="call-to-action" href="#" title="Show"></a>
+                  <div class="link-btn"></div>
+                  <div class="additional-info">
+                    <div class="nov-container">
+                      <p class="number-of-views">279</p>
+                    </div>
+                    <div class="d-container">
+                      <p class="date">07/03/14</p>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="work-header centered">Fully Responsive</h3>
+                <p class="category-labeled centered">Design / Branding</p><a href="#" target="_blank" title="Open in New Tab"></a>
+              </div>
+              <div class="work-item col-d-3">
+                <div class="thumb-wrapper"><img src="./content/img/work_06.jpg" alt="Font Awesome Icons"><a class="call-to-action" href="#" title="Show"></a>
+                  <div class="link-btn"></div>
+                  <div class="additional-info">
+                    <div class="nov-container">
+                      <p class="number-of-views">279</p>
+                    </div>
+                    <div class="d-container">
+                      <p class="date">07/03/14</p>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="work-header centered">Font Awesome Icons</h3>
+                <p class="category-labeled centered">Design / Branding</p><a href="#" target="_blank" title="Open in New Tab"></a>
+              </div>
+              <div class="work-item col-d-3">
+                <div class="thumb-wrapper"><img src="./content/img/work_07.jpg" alt="HTML3 &amp; CSS3"><a class="call-to-action" href="#" title="Show"></a>
+                  <div class="link-btn"></div>
+                  <div class="additional-info">
+                    <div class="nov-container">
+                      <p class="number-of-views">279</p>
+                    </div>
+                    <div class="d-container">
+                      <p class="date">07/03/14</p>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="work-header centered">HTML3 &amp; CSS3</h3>
+                <p class="category-labeled centered">App design / development</p><a href="#" target="_blank" title="Open in New Tab"></a>
+              </div>
+              <div class="work-item col-d-3">
+                <div class="thumb-wrapper"><img src="./content/img/work_08.jpg" alt="Various Layouts"><a class="call-to-action" href="#" title="Show"></a>
+                  <div class="link-btn"></div>
+                  <div class="additional-info">
+                    <div class="nov-container">
+                      <p class="number-of-views">279</p>
+                    </div>
+                    <div class="d-container">
+                      <p class="date">07/03/14</p>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="work-header centered">Various Layouts</h3>
+                <p class="category-labeled centered">Branding</p><a href="#" target="_blank" title="Open in New Tab"></a>
+              </div>
+      </div>
+      <div class="container">
+              <div class="team-class" id="team">
+                <h2 class="content-header centered">Our team</h2>
+                <p class="content-paragraph centered col-d-10 offset-col-d-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</p>
+              </div>
+              <div class="team-member centered col-12 col-t-6 col-d-3"><img class="thumbnail" src="content/img/team-player-1.png" alt="Fully Responsive">
+                <h3 class="full-name">Fully Responsive</h3>
+                <p class="position">Design / Branding</p>
+                <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <ul class="socialconnect">
+                  <li><a class="facebook" href="#" title="Fully Responsive on Facebook"></a></li>
+                  <li><a class="twitter" href="#" title="Fully Responsive on Twitter"></a></li>
+                  <li><a class="linkedin" href="#" title="Fully Responsive on Linkedin"></a></li>
+                </ul>
+              </div>
+              <div class="team-member centered col-12 col-t-6 col-d-3"><img class="thumbnail" src="content/img/team-player-2.png" alt="Fully Responsive">
+                <h3 class="full-name">Fully Responsive</h3>
+                <p class="position">Design / Branding</p>
+                <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <ul class="socialconnect">
+                  <li><a class="facebook" href="#" title="Fully Responsive on Facebook"></a></li>
+                  <li><a class="twitter" href="#" title="Fully Responsive on Twitter"></a></li>
+                  <li><a class="linkedin" href="#" title="Fully Responsive on Linkedin"></a></li>
+                </ul>
+              </div>
+              <div class="team-member centered col-12 col-t-6 col-d-3"><img class="thumbnail" src="content/img/team-player-3.png" alt="Fully Responsive">
+                <h3 class="full-name">Fully Responsive</h3>
+                <p class="position">Design / Branding</p>
+                <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <ul class="socialconnect">
+                  <li><a class="facebook" href="#" title="Fully Responsive on Facebook"></a></li>
+                  <li><a class="twitter" href="#" title="Fully Responsive on Twitter"></a></li>
+                  <li><a class="linkedin" href="#" title="Fully Responsive on Linkedin"></a></li>
+                </ul>
+              </div>
+              <div class="team-member centered col-12 col-t-6 col-d-3"><img class="thumbnail" src="content/img/team-player-4.png" alt="Fully Responsive">
+                <h3 class="full-name">Fully Responsive</h3>
+                <p class="position">Design / Branding</p>
+                <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <ul class="socialconnect">
+                  <li><a class="facebook" href="#" title="Fully Responsive on Facebook"></a></li>
+                  <li><a class="twitter" href="#" title="Fully Responsive on Twitter"></a></li>
+                  <li><a class="linkedin" href="#" title="Fully Responsive on Linkedin"></a></li>
+                </ul>
+              </div>
+      </div>
+      <div class="container">
+              <div class="stats-class" id="stats">
+                <h2 class="content-header centered">Stats &amp; Testimonial</h2>
+                <p class="content-paragraph centered col-d-10 offset-col-d-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</p>
+              </div>
+        <div class="container">
+                <div class="col-6 col-t-6 col-d-3 centered">
+                  <div class="scores score-1">
+                    <p class="score">20</p>
+                    <p class="caption">Products</p>
+                  </div>
+                </div>
+                <div class="col-6 col-t-6 col-d-3 centered">
+                  <div class="scores score-2">
+                    <p class="score">120,000</p>
+                    <p class="caption">Downloads</p>
+                  </div>
+                </div>
+                <div class="col-6 col-t-6 col-d-3 centered">
+                  <div class="scores score-3">
+                    <p class="score">1200</p>
+                    <p class="caption">Customers</p>
+                  </div>
+                </div>
+                <div class="col-6 col-t-6 col-d-3 centered">
+                  <div class="scores score-4">
+                    <p class="score">900</p>
+                    <p class="caption">Like</p>
+                  </div>
+                </div>
+        </div>
+              <div class="container">
+                <div class="offset-col-d-3 col-d-7 opinion-wrapper centered"><img class="thumb" src="./content/img/face.png">
+                  <p class="author">John Doe</p>
+                  <p class="source">From Wỏdpress</p>
+                  <p class="cite">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</p>
+                </div>
+              </div>
+      </div>
+      <div class="container">
+      </div>
+      <div class="container">
+              <div class="keep-in-touch-class" id="keep-in-touch">
+                <h2 class="content-header centered">Keep in touch with us</h2>
+                <p class="content-paragraph centered col-d-10 offset-col-d-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</p>
+              </div>
+              <div class="col-12 col-t4 col-d-4">
+                <div class="contacts centered contact-1">
+                  <p class="type">Address</p>
+                  <p class="content">66, Dang Van ngu, Dong Da, Ha noi, Vietnam</p>
+                </div>
+              </div>
+              <div class="col-12 col-t4 col-d-4">
+                <div class="contacts centered contact-2">
+                  <p class="type">E-mail</p>
+                  <p class="content">contact@halovietnam.com</p>
+                </div>
+              </div>
+              <div class="col-12 col-t4 col-d-4">
+                <div class="contacts centered contact-3">
+                  <p class="type">Phone</p>
+                  <p class="content">+844 1234 56789</p>
+                </div>
+              </div>
+      </div>
+      <div class="container">
+        <form class="contact-us" action="" method="post" name="submit-form">
+          <fieldset class="input-container">
+            <input class="email" type="text" placeholder="abc@domain.com" aria-label="Email">
+            <input class="fname" type="text" placeholder="Lora Chep" aria-label="Full name">
+            <textarea class="ta" cols="40" rows="25" aria-label="Message" placeholder="Message"></textarea>
+            <input class="sbm centered capitals" type="submit" value="Send Message" aria-label="Send Message">
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="wrapper-1">
+          <div class="col-8 offset-col-2">
+            <h2 class="content-header centered">Sign up for our newsletter</h2>
+          </div>
+          <div class="col-8 offset-col-2">
+            <div class="content-paragraph centered subhead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</div>
+          </div>
+        </div>
+        <div class="wrapper-2">
+          <form class="centered" id="mailform" name="signupform" action="" method="post">
+            <input class="mail" type="email" placeholder="Enter your email to update" name="usermail" id="mail" aria-label="Email">
+            <input class="capitals submit-btn" type="submit" name="usermail" id="mail" aria-label="Submit" value="Submit">
+          </form>
+        </div>
+        <div class="wrapper-3">
+          <div class="col-3">
+            <p>HALOVIETNAM LTD 66, Dang Van ngu, Dong Da Hanoi, Vietnam</p>
+          </div>
+          <div class="col-1 offset-col-1">
+            <p>Examples Shop License</p>
+          </div>
+          <div class="col-1 offset-col-1">
+            <p>Contact About Privacy Terms</p>
+          </div>
+          <div class="col-1 offset-col-1">
+            <p>Download Support Documents</p>
+          </div>
+          <div class="col-1 offset-col-1">
+            <p>Media Blog Forums</p>
+          </div>
+        </div>
+      </div>
+      <script src="./js/script.js"></script>
+    </footer>
+  </body>
+</html>

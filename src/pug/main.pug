@@ -33,8 +33,9 @@ include feedback-cite
           +team-member(locals.pageN[x].team[i], i)
       when 'stats'
         +section-header(locals.pageN[x])
-        - for (var i = 0; i < locals.pageN[x].stats.length; i++)
-          +stats(locals.pageN[x].stats[i], i)
+        .container
+          - for (var i = 0; i < locals.pageN[x].stats.length; i++)
+            +stats(locals.pageN[x].stats[i], i)
         +opinion(locals.pageN[6])
       when 'keepintouch'
         +section-header(locals.pageN[x])

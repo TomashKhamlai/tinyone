@@ -4,6 +4,8 @@ mixin work-item(data)
   .work-item.col-d-3
     .thumb-wrapper
       img(src=data.thumb, alt=data.header)
+      a.call-to-action(href="#",title="Show")
+      .link-btn
       .additional-info
         .nov-container
           p.number-of-views= data["number-of-views"]
